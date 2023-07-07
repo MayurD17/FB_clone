@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="favicon.png" />
+    <title>Facebook - log in or sign up</title>
+</head>
+<body class="bg-gray-200">
+   <form action="" id="loginform">
+    <div class="container mt-32 flex mx-auto items-center justify-center ">
+        <div class="left w-2/5 h-60 mx-0 py-0">
+            <img class="w-80 h-28" src="Fb.svg" alt="">
+            <p class="text-3xl mx-6">Facebook helps you connect and share with the people in your life.</p>
+            
+        </div>
+        
+        <div class="right flex flex-col bg-white p-3 rounded-lg shadow-md shadow-gray-400 w-3/12 h-1/2 text-lg relative">
+            <input id="email" class="px-4 py-1 h-12 my-2 border border-1 border-gray-200 rounded-lg" type="text" placeholder="Email address or phone number">
+            <p id="emailError" class="text-sm text-red-600"></p>
+            <input id="password" class="px-4 py-1 h-12 my-2 border border-1 border-gray-200 rounded-lg active:border-blue-600" type="password" placeholder="Password">
+            <p id="passwordError" class="text-sm text-red-600"></p>
+            <button class="btn text-xl font-bold bg-blue-500 text-white my-2 py-3 rounded-md" onclick="validateForm()"  >Log In</button>
+            <span class="text-blue-500 text-sm my-2  cursor-pointer hover:underline" onclick="newpage()">Forgotten password?</span>
+            <hr>
+            <button class="btn  font-bold bg-green-500 text-white my-6 py-3 px-4 mx-auto rounded-md w-fit hover:bg-green-600">Create New Account</button>
+        </div>
+      
+    
+    </div>
+</form>
+    <script src="index.js"></script>
+</body>
+</html>
